@@ -1,0 +1,375 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Playwrite+HR:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  background-color: black;
+}
+* {
+  color: white;
+}
+.navbar {
+  background-color: rgb(34, 34, 34);
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+.navbar-left {
+  left: 0;
+  display: flex;
+  flex-direction: row;
+}
+.logo {
+  margin-top: 15px;
+}
+.logo img {
+  border-radius: 50%;
+  border: none;
+  height: 50px;
+}
+.logo-text h2 {
+  font-size: 30px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.navbar-center input {
+  border-radius: 20px;
+  background-color: rgba(109, 109, 109, 0.75);
+  border: 1px rgba(54, 54, 54, 0.874) solid;
+  color: white;
+  width: 400px;
+  padding: 10px 10px 10px 10px;
+}
+::placeholder {
+  color: white;
+  margin-left: 10px;
+}
+.navbar-center {
+  margin: auto;
+}
+.navbar-right {
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.navbar-right div {
+  margin: 0 10px 0 10px;
+}
+.navbar-right button#upload {
+  background-color: rgba(64, 64, 64, 0.799);
+  height: 40px;
+  border: none;
+  width: 100px;
+}
+.profile img {
+  border-radius: 50%;
+  height: 50px;
+}
+.navbar-right button#upload:hover {
+  cursor: pointer;
+}
+.navbar i:hover {
+  cursor: pointer;
+}
+.profile img:hover {
+  cursor: pointer;
+}
+.main-content {
+  display: flex;
+  flex-direction: row;
+  margin-top: 85px;
+}
+.sidebar {
+  padding-right: 50px;
+  font-size: 20px;
+  background-color: rgb(34, 34, 34);
+  border-right: 1px solid rgba(128, 128, 128, 0.403);
+  border-top: 1px solid rgba(128, 128, 128, 0.403);
+  position: fixed;
+  padding-top: 40px;
+  height: 100vh;
+  left: 0;
+}
+.sidebar-item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+#lastSidebar {
+  border-bottom: 1px rgba(128, 128, 128, 0.403) solid;
+  padding-bottom: 20px;
+}
+.sidebar-text {
+  margin-left: 10px;
+}
+.sidebar-item img {
+  border-radius: 50%;
+  height: 30px;
+}
+.sidebar-item p {
+  font-size: 12px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.profile-content {
+  margin-top: 30px;
+  margin-left: 210px;
+  width: 100%;
+}
+.profile-information {
+  display: flex;
+  flex-direction: row;
+}
+.profile-information img {
+  border-radius: 50%;
+  height: 150px;
+}
+.profile-information button {
+  padding: 5px 5px 5px 5px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  border: none;
+  width: 100px;
+  height: 30px;
+}
+.profile-text {
+  margin-left: 15px;
+  width: 350px;
+}
+.profile-text h2 i {
+  margin-left: 210px;
+}
+.profile-parameters {
+  display: flex;
+  flex-direction: row;
+}
+.followers-count,
+.likes-count {
+  margin-left: 15px;
+}
+.profile-nav {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(34, 34, 34);
+}
+.profilenav-item {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+}
+.profilenav-item#slider {
+  margin-top: 5px;
+  margin-left: 680px;
+}
+.slider {
+  display: flex;
+  position: relative;
+  width: 100%;
+  background-color: #444444df;
+  border-radius: 25px;
+  overflow: hidden;
+  color: red;
+}
+
+.slider-option {
+  flex: 1;
+  padding: 15px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.slider-option:hover {
+  color: #ff004c;
+}
+.slider-option.active {
+  color: #ff004c;
+}
+.slider-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33.33%;
+  height: 100%;
+  background-color: #0808083a;
+  border-radius: 25px;
+  transition: left 0.3s;
+  pointer-events: none;
+}
+.content-item {
+  text-align: center;
+  margin-top: 200px;
+}
+.content-item button {
+  border-radius: 5px;
+  background-color: rgb(48, 48, 48);
+  color: white;
+  border-color: #ff004c rgba(0, 162, 255, 0.677) rgb(254, 90, 213);
+  height: 50px;
+  width: 50px;
+}
+.content-item button:hover {
+  cursor: pointer;
+  color: #ff004c;
+}
+.content-item button:hover i {
+  color: #ff004c;
+  transition: color 0.5s;
+}
+.note {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+}
+#openPopupBtn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #25f4ee; /* TikTok cyan */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#openPopupBtn i {
+  color: #ff004c;
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Gray with opacity */
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: #414141f5;
+  padding: 30px; /* Increased padding */
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  width: 80%; /* Increased width */
+  max-width: 600px; /* Maximum width */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added a subtle shadow */
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff0050; /* TikTok red */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.upload-btn {
+  font-size: 12px;
+  background-color: #25f4ee; /* TikTok cyan */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  /* Hide TikTok test and show only the logo */
+  .logo-text {
+    display: none;
+  }
+
+  /* Hide navbar-right in mobile */
+  .navbar-right {
+    display: none;
+  }
+
+  /* Make the sidebar go to bottom in mobile */
+  .sidebar {
+    background-color: #080808;
+    position: static;
+    border-right: none;
+    border-top: none;
+    padding-right: 0;
+    padding-top: 0;
+    height: auto;
+    text-align: center;
+  }
+
+  /* Show only the icons in the sidebar in mobile */
+  .sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .sidebar-item p {
+    display: none;
+  }
+
+  /* Make the profile-content responsive in mobile */
+  .profile-content {
+    margin-top: 0;
+    margin-left: 10px;
+    width: 100%;
+  }
+
+  .profile-information img {
+    height: 100px;
+  }
+
+  .profile-text {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .profile-parameters {
+    flex-direction: row;
+  }
+
+  .followers-count,
+  .likes-count {
+    margin-left: 10px;
+  }
+
+  .profile-nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .profilenav-item {
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 14px;
+  }
+  .profilenav-item#slider {
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  .profilenav-item h3 {
+    font-size: 12px;
+  }
+  /* Make the slider and profile-nav responsive in mobile */
+  .slider {
+    order: 1;
+    margin-bottom: 20px;
+  }
+
+  .profile-nav {
+    order: 2;
+  }
+}
